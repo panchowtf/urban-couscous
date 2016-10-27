@@ -3,4 +3,5 @@
 
 int add(int x, int y);
 
-#endif /* add_h */
+#endif
+/* add_h */
