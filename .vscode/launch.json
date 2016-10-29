@@ -5,12 +5,12 @@
             "name": "C++ Launch (Windows)",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "enter program name, for example ${workspaceRoot}/a.exe",
+            "program": "tuts",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
             "environment": [],
-            "externalConsole": false
+            "externalConsole": true
         },
         {
             "name": "C++ Attach (Windows)",
