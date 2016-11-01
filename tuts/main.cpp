@@ -1,27 +1,37 @@
 #include <iostream>
-#include "constants.h"
 using namespace std;
-
-float getInput()
+//get input from user
+int getInput()
 {
     cout << "Pick a number :";
-    float t;
-    cin >> t;
-    return t;
+    int x;
+    cin >> x;
+    return x;
 }
 
-void compute(int t)
+void compute(int x, int y)
 {
-    if (t % 2==0)
-        cout << "the number is even"<<  endl;
-    else
-        cout << "the number is odd" << endl;
+    //compare both
+   if (x < y)
+   {
+       cout << "the bigger number is:" << y <<endl;
+       cout << "the smaller number is:" << x <<endl;
+   }
+   else
+   {
+       cout << "Swapping values"<<endl;
+       int z;
+       z=x;
+       x=y;
+       y=z;
+       cout << "the bigger number is:" << y << endl;
+       cout << "the smaller number is:" << x << endl;
+   }
 }
 
 int main()
 {
-    int n;
-    n = getInput();
-    compute(n);
-    return 0;
+    int x = getInput();
+    int y = getInput();
+    compute(x,y);
 }
