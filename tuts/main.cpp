@@ -1,37 +1,19 @@
 #include <iostream>
+#include<string>
+
 using namespace std;
-//get input from user
-int getInput()
+void doSomething(float x, float y)
 {
-    cout << "Pick a number :";
-    int x;
-    cin >> x;
-    return x;
+  cout <<"You been alive "<< x/y << "years for every letter in your name." << endl;  
 }
-
-void compute(int x, int y)
-{
-    //compare both
-   if (x < y)
-   {
-       cout << "the bigger number is:" << y <<endl;
-       cout << "the smaller number is:" << x <<endl;
-   }
-   else
-   {
-       cout << "Swapping values"<<endl;
-       int z;
-       z=x;
-       x=y;
-       y=z;
-       cout << "the bigger number is:" << y << endl;
-       cout << "the smaller number is:" << x << endl;
-   }
-}
-
 int main()
 {
-    int x = getInput();
-    int y = getInput();
-    compute(x,y);
+    cout << "What's your name?" << endl;
+    string user_name;
+    cin >> user_name;
+    cout << "How old are you?" << endl;
+    int user_age;
+    cin >> user_age;
+    doSomething(user_age,user_name.length());
+    return 0;
 }
